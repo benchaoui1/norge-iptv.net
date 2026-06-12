@@ -1,0 +1,22 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        { "type": "host", "value": "www.norge-iptv.net" }
+      ],
+      "destination": "https://norge-iptv.net/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/",
+      "destination": "https://norge-iptv.net/iptv-norge-premium.html",
+      "permanent": true
+    },
+    {
+      "source": "/beste-iptv-norge.html",
+      "destination": "https://norge-iptv.net/iptv-norge-premium.html",
+      "permanent": true
+    }
+  ]
+}
