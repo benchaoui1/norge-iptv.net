@@ -377,3 +377,37 @@ address { font-style: normal; }
 .vm-hero-ribbon:hover { color: var(--text-white) !important; transform: translateY(-1px); }
 @keyframes vmPulse { 0%,100%{ box-shadow:0 6px 20px rgba(127,63,255,0.35);} 50%{ box-shadow:0 6px 28px rgba(96,252,199,0.55);} }
 @media (max-width: 600px){ .vm-hero-ribbon{ font-size: 0.72rem; padding: 8px 14px; } }
+
+/* === Killer hero upgrades (trust eyebrow, dual CTA, trust badges) === */
+.hero-eyebrow {
+    display:inline-flex; align-items:center; gap:10px; flex-wrap:wrap;
+    background:rgba(255,255,255,0.06); border:1px solid rgba(255,255,255,0.12);
+    padding:7px 16px; border-radius:50px; margin-bottom:20px;
+    font-size:0.9rem; color:#E8EAF0;
+}
+.hero-stars { color:#FFC83D; letter-spacing:2px; font-size:0.95rem; }
+.hero-cta-row { display:flex; gap:14px; flex-wrap:wrap; align-items:center; margin-top:8px; }
+.cta-button-ghost {
+    display:inline-flex; align-items:center; gap:8px;
+    padding:15px 26px; border-radius:50px; font-weight:700; font-size:1rem;
+    color:#fff; text-decoration:none;
+    background:rgba(37,211,102,0.14); border:1.5px solid #25D366;
+    transition:all .25s ease;
+}
+.cta-button-ghost:hover { background:#25D366; transform:translateY(-2px); box-shadow:0 8px 24px rgba(37,211,102,0.35); }
+.cta-button-ghost i { font-size:1.25rem; }
+.hero-trust-badges {
+    display:flex; flex-wrap:wrap; gap:14px 24px; list-style:none;
+    padding:0; margin:26px 0 0 0;
+}
+.hero-trust-badges li {
+    display:inline-flex; align-items:center; gap:8px;
+    font-size:0.92rem; color:#C9CDD8; font-weight:500;
+}
+.hero-trust-badges i { color:var(--primary-cyan); font-size:1.2rem; }
+@media (max-width:768px){
+    .hero-cta-row { justify-content:center; }
+    .hero-trust-badges { justify-content:center; gap:12px 18px; }
+    .hero-trust-badges li { font-size:0.82rem; }
+    .hero-eyebrow { font-size:0.8rem; }
+}
